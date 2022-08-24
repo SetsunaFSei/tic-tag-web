@@ -9,29 +9,32 @@ import ProductListScreen from "./screens/product/ProductListScreen";
 
 function App() {
   // const [items, setItems] = useState([]);
-  const isLogin = true;// localStorage.getItem("isLogin");
+  const isLogin = true; // localStorage.getItem("isLogin");
   return (
     <>
       <div className="container">
         <Router>
-         
-            <div>
-              <Drawer />
-              <Routes>
-                <Route path="/" exact element={<HomeScreen />} />
-                <Route path="/home" exact element={<HomeScreen />} />
-                <Route path="/login" exact element={<LoginScreen />} />
-                 <Route path="/claim" element={<ClaimListScreen />} />
-                <Route path="/product" element={<ProductListScreen />} /> 
-                <Route path="/product-create" element={<ProductCreateScreen />} /> 
-                <Route path="/product-detail/:id" element={<ProductDetailScreen />} /> 
-                
-              </Routes>
-            </div>
-         
-          
-           
-       
+          <div>
+            <Routes>
+              <Route path="/" exact element={<LoginScreen />} />
+              <Route path="home" exact element={<HomeScreen />}>
+                <Route path="product/product-create" element={<ProductCreateScreen />} />                
+                <Route path="product/product-detail/:id" element={<ProductDetailScreen />} />                
+                <Route path="claim" element={<ClaimListScreen />} />                
+                <Route path="product" element={<ProductListScreen />}>
+                  {/* <Route
+                    path="product-create"
+                    element={<ProductCreateScreen />}
+                  />
+                  <Route
+                    path="product-detail/:id"
+                    element={<ProductDetailScreen />}
+                  /> */}
+                </Route>
+              </Route>
+              <Route path="/login" exact element={<LoginScreen />} />
+            </Routes>
+          </div>
         </Router>
       </div>
     </>

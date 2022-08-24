@@ -1,57 +1,47 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import data from "../../assets/product.json";
-import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
+import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 import Dialog from "../../components/Dialog";
-import {  useRef } from "react";
+import { useRef } from "react";
 
 export default function ProductListScreen() {
   const [products, setProducts] = useState(data);
   const navigate = useNavigate();
 
   function onCreatePress(e) {
-    return navigate("/product-create");
+    return navigate("product-create");
   }
-   
- 
+
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
-    //Update
-    nameProduct: ""
+    nameProduct: "",
   });
   const idProductRef = useRef();
   const handleDialog = (message, isLoading, nameProduct) => {
     setDialog({
       message,
       isLoading,
-      //Update
-      nameProduct
+      nameProduct,
     });
   };
- 
 
   const handleDelete = (id) => {
-    //Update
- 
     const index = data.findIndex((p) => p.id === id);
-
     handleDialog("Are you sure you want to delete?", true, data[index].name);
     idProductRef.current = id;
   };
 
-
   const areUSureDelete = (choose) => {
     if (choose) {
       setProducts(products.filter((p) => p.id !== idProductRef.current));
-      // products.splice(products.findIndex(({id}) => id === e), 1);
- 
       handleDialog("", false);
     } else {
       handleDialog("", false);
     }
   };
-  
+
   return (
     <>
       <div className="py-3 px-4">
@@ -125,9 +115,8 @@ export default function ProductListScreen() {
                   <td className="p3 h-32 text-sm text-gray-700 text-center items-center flex justify-evenly">
                     <div>
                       <Link
-                        className="font-bold text-blue-500"                        
-                        // onClick={() => handleEdit(product.id)}
-                        to={`/product-detail/${product.id}`}
+                        className="font-bold text-blue-500"
+                        to={`product-detail/${product.id}`}
                       >
                         Edit
                       </Link>
@@ -135,26 +124,28 @@ export default function ProductListScreen() {
                     <div>
                       <span className="px-1"></span>
                       <Link
-                       onClick={() => handleDelete(product.id)}
+                        onClick={() => handleDelete(product.id)}
                         className="font-bold text-blue-500"
                         to={``}
-                      >Delete</Link>
+                      >
+                        Delete
+                      </Link>
                     </div>
                   </td>
                 </tr>
               </>
             ))}
             {dialog.isLoading && (
-        <Dialog
-          //Update
-          nameProduct={dialog.id}
-          onDialog={areUSureDelete}
-          message={dialog.message}
-        />
-      )}
+              <Dialog
+                nameProduct={dialog.id}
+                onDialog={areUSureDelete}
+                message={dialog.message}
+              />
+            )}
           </tbody>
         </table>
       </div>
+      <Outlet />
     </>
   );
 }

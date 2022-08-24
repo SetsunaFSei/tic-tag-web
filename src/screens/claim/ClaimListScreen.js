@@ -32,9 +32,9 @@ export default function ClaimListScreen() {
               <th className="w-50 p-3 text-sm font-semibold tracking-wide text-center">
                 Status
               </th>
-              <th className="w-50 p-3 text-sm font-semibold tracking-wide text-center">
+              {/* <th className="w-50 p-3 text-sm font-semibold tracking-wide text-center">
                 Actions
-              </th>
+              </th> */}
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
@@ -74,11 +74,11 @@ export default function ClaimListScreen() {
                       </span>
                     )}
                   </td>
-                  <td className="p3 text-sm text-gray-700 text-center">
+                  {/* <td className="p3 text-sm text-gray-700 text-center">
                     <Link className="font-bold text-blue-500" to={``}>
                       Edit
                     </Link>
-                  </td>
+                  </td> */}
                 </tr>
               </>
             ))}
