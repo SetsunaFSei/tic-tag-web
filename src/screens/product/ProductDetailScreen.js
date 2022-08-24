@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 export default function ProductDetailScreen() {
   const navigate = useNavigate();
   function onSavePress(e) {
-    return navigate("home/product");
+    return navigate("../product");
   }
   function onBackPress(e) {
-    return navigate("home/product");
+    return navigate("../product");
   }
 
   return (

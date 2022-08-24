@@ -1,5 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
-import Drawer from "./Drawer";
+import { Link, Outlet } from "react-router-dom"; 
 import ControlIcon from "../../assets/control.png";
 import PhotoIcon from "../../assets/photo.png";
 import FolderIcon from "../../assets/folder.png";

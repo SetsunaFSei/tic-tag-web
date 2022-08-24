@@ -2,12 +2,12 @@ const Dialog=({ message, onDialog, nameProduct }) =>{
     return (
       
       <div 
-      className="fixed  inset-0   "
+      className="fixed top-1/2 left-1/2"
         onClick={() => onDialog(false)}
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="flex p-8 bg-amber-500  rounded-md items-center origin-center absolute justify-center flex-col "
+          className="flex p-8 bg-amber-500  rounded-md items-center origin-center   justify-center flex-col "
         >
           <h3  >{message}</h3>
           <h1  >{nameProduct}</h1>

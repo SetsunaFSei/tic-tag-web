@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ClaimListScreen from "./screens/claim/ClaimListScreen";
-import Drawer from "./screens/home/Drawer";
 import HomeScreen from "./screens/home/HomeScreen";
 import LoginScreen from "./screens/login/LoginScreen";
 import ProductCreateScreen from "./screens/product/ProductCreateScreen";
@@ -12,7 +11,7 @@ function App() {
   const isLogin = true; // localStorage.getItem("isLogin");
   return (
     <>
-      <div className="container">
+      <div className="w-full">
         <Router>
           <div>
             <Routes>
@@ -38,18 +37,7 @@ function App() {
         </Router>
       </div>
     </>
-    // :<>
-    // <div className="container">
-    //     <Router>
-    //       <Routes>
-    //         <Route path="/" exact element={<HomeScreen />} />
-    //         <Route path="/claim" element={<ClaimListScreen />} />
-    //         <Route path="/product" element={<ProductListScreen />} />
-    //       </Routes>
-
-    //     </Router>
-    //   </div>
-    // </>
+     
   );
 }
 
