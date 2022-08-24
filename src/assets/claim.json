@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "claimNumber": "C-00001",
+      "userName": "Wesly",
+      "productName": "Blender",
+      "serialNumber": "1101-11023-123122",
+      "claimDate": "2022-02-01",
+      "status": "Proses"
+    },
+    {
+      "id": 2,
+      "claimNumber": "C-00002",
+      "userName": "Aioria",
+      "productName": "Setrika",
+      "serialNumber": "1101-11023-123123",
+      "claimDate": "2022-02-02",
+      "status": "Reject"
+    },
+    {
+      "id": 3,
+      "claimNumber": "C-00003",
+      "userName": "Celeina Ann",
+      "productName": "Mesin Cuci",
+      "serialNumber": "1101-11023-123124",
+      "claimDate": "2022-02-01",
+      "status": "Proses"
+    },
+    {
+      "id": 4,
+      "claimNumber": "C-00004",
+      "userName": "Mey Angelisa",
+      "productName": "Vacum Cleaner",
+      "serialNumber": "1101-11023-123125",
+      "claimDate": "2022-02-01",
+      "status": "Reject"
+    },
+    {
+      "id": 5,
+      "claimNumber": "C-00005",
+      "userName": "Naelle Rae",
+      "productName": "AC",
+      "serialNumber": "1101-11023-123126",
+      "claimDate": "2022-02-01",
+      "status": "Approve"
+    }
+  ]

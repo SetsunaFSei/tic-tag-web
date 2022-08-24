@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "productCode": "P-00001",
+      "productName": "Blender",
+      "brand": "Maspion",
+      "model":"1111",
+      "serialNumber": "1101-11023-123122",
+      "productionDate": "2022-02-01",      
+      "imageFile": "https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"
+    },
+    {
+      "id": 2,
+      "productCode": "P-00002",
+      "productName": "Setrika",
+      "brand": "Philips",
+      "model":"1112",
+      "serialNumber": "1101-11023-123123",
+      "productionDate": "2022-02-02",      
+      "imageFile": "https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"
+    },
+    {
+      "id": 3,
+      "productCode": "P-00003",
+      "productName": "Mesin Cuci",
+      "brand": "Politron",
+      "model":"1113",
+      "serialNumber": "1101-11023-123124",
+      "productionDate": "2022-02-01",      
+      "imageFile": "https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"
+    },
+    {
+      "id": 4,
+      "productCode": "P-00004",
+      "productName": "Vacum Cleaner",
+      "brand": "Xiaomi",
+      "model":"1114",
+      "serialNumber": "1101-11023-123125",
+      "productionDate": "2022-02-01",      
+      "imageFile": "https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"
+    },
+    {
+      "id": 5,
+      "productCode": "P-00005",
+      "productName": "AC",
+      "brand": "Infinix",
+      "model":"1115",
+      "serialNumber": "1101-11023-123126",
+      "productionDate": "2022-02-01",      
+      "imageFile": "https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"
+
+    }
+  ]
